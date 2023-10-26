@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<title>injection</title>
+<head>
+    <body>
+        <center><h1>WELCOME TO MICROINJECTION</h1>
+        <div style="border: 2px solid rgb(0, 0, 0); width:20%; padding: 75px; border-radius: 25px; background-color: transparent; background-color: rgb(250, 190, 230); margin-top:10%;">
+           <div style="margin-top:0%;"> <input type="text"  id="i1" placeholder="Firstname:-" style= "margin-top: 10px; border: hidden;border-radius: 5px;"></br>
+            <input type="text"  id="i2" placeholder="Lastname:-" style="margin-top: 10px; border: hidden;border-radius: 5px;"><br>
+            <button onclick="submit()" style="margin-top: 10px; background-color: green; color: white; border: hidden; height: 30%; width: 20%; border-radius: 5px;">submit</button></div>
+        </div>
+        <div style="margin-top: 30PX;">
+       <k id="k10"></k>
+         <k1 id="k11"></k1>
+        </div>
+        </center>
+        <script>
+            function submit(){
+            var a=document.getElementById("i1").value;
+            var b=document.getElementById("i2").value;
+            if (a==""){
+                document.getElementById("k10").innerHTML="";
+
+            }
+            else{
+            document.getElementById("k10").innerHTML="WELCOME "+ a;
+            document.getElementById("k11").innerHTML=b;
+            }
+        }
+            
+
+        </script>
+    </body>
+</head>
