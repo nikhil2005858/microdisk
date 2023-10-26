@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<title>injection</title>
+<head>
+    <style>
+        .ani1{
+            animation-name: anima1;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes anima1 {
+            60%{border-color: rgb(241, 151, 32);}
+            100%{border-color: rgb(0, 0, 0);}
+    
+        }
+
+    </style>
+    <body style="background-color: rgb(0, 0, 0); color: white;">
+        <center><h1 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">WELCOME TO MICROINJECTION</h1>
+        <div  class="ani1" style="border: 2px solid #f38c2b; width:20%; padding: 75px; border-radius: 25px; background-color: transparent; background-color: rgb(250, 190, 230); margin-top:10%; background-color: transparent;" >
+           <H2 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">LOGIN</H2>
+            <div style="margin-top:0%;"> <input type="text"  id="i1" placeholder="Firstname:-" style= "margin-top: 10px; border: hidden;border-radius: 5px;"></br>
+            <input type="text"  id="i2" placeholder="Lastname:-" style="margin-top: 10px; border: hidden;border-radius: 5px;"><br>
+            <button onclick="submit()" style="margin-top: 10px; background-color: green; color: white; border: hidden; height: 30%; width: 20%; border-radius: 5px;">submit</button></div>
+        </div>
+        <div style="margin-top: 30PX;">
+    
+       <k id="k10"></k>
+         <k1 id="k11"></k1>
+        </div>
+        <h4>This web application deveploed for testing </h4>
+        <h2>Developed by MICROINTEL </h2>
+        </center>
+        <script>
+            function submit(){
+            var a=document.getElementById("i1").value;
+            var b=document.getElementById("i2").value;
+            if (a==""){
+                document.getElementById("k10").innerHTML="";
+
+            }
+            else{
+            document.getElementById("k10").innerHTML="WELCOME "+ a;
+            document.getElementById("k11").innerHTML=b;
+            }
+        }
+            
+
+        </script>
+    </body>
+</head>
